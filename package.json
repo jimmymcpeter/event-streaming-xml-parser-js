@@ -1,0 +1,46 @@
+{
+  "name": "event-streaming-xml-parser",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimmymcpeter/event-streaming-xml-parser-js.git"
+  },
+  "version": "0.0.1",
+  "description": "Utilize an event streaming parser to quickly and efficiently parse XML files",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "pretest": "npm run type-check",
+    "type-check": "tsc --noEmit",
+    "test": "npx tsx --test-concurrency 1 --test test/*.test.ts",
+    "format": "npx prettier --write .",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "emittery": "^1.2.0",
+    "saxes": "^6.0.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.8",
+    "@types/node": "^20.19.26",
+    "prettier": "^3.7.4",
+    "rimraf": "^6.1.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "author": "James McGonegal",
+  "license": "MIT"
+}
