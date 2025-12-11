@@ -4,7 +4,7 @@
     "type": "git",
     "url": "git+https://github.com/jimmymcpeter/event-streaming-xml-parser-js.git"
   },
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Utilize an event streaming parser to quickly and efficiently parse XML files",
   "type": "module",
   "engines": {
