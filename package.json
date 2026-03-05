@@ -30,7 +30,7 @@
     "prepack": "npm run build"
   },
   "dependencies": {
-    "emittery": "^1.2.0",
+    "emittery": "^2.0.0",
     "saxes": "^6.0.0"
   },
   "devDependencies": {
