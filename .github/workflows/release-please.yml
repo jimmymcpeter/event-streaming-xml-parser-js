@@ -24,7 +24,7 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
 
       # Ensure npm 11.5.1 or later is installed for trusted publishing to work
-      - run: npm install -g npm@latest
+      - run: npm install -g npm@11.12.1
 
       - run: npm -v
       
