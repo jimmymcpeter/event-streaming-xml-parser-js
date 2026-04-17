@@ -10,7 +10,7 @@ wrapped it up in a package to reuse easier :gift:
 
 ## Requirements
 
-- Node.js >= v20
+- Node.js >= v22
 - ESM
 
 ## Install
