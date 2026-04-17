@@ -6,7 +6,8 @@
     "rootDir": "./src",
     "sourceMap": true,
     "declaration": true,
-    "noUncheckedIndexedAccess": true
+    "noUncheckedIndexedAccess": true,
+    "types": ["node"]
   },
   "include": ["./src"]
 }
