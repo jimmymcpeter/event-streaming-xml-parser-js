@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/jimmymcpeter/event-streaming-xml-parser-js/compare/v1.0.1...v2.0.0) (2026-04-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** bump emittery from 1.2.0 to 2.0.0 and drop support for node 20 ([#12](https://github.com/jimmymcpeter/event-streaming-xml-parser-js/issues/12))
+
+### Build System
+
+* **deps:** bump emittery from 1.2.0 to 2.0.0 and drop support for node 20 ([#12](https://github.com/jimmymcpeter/event-streaming-xml-parser-js/issues/12)) ([8c15775](https://github.com/jimmymcpeter/event-streaming-xml-parser-js/commit/8c15775a0b26616de4d26d61404fafdb9a62a04b))
+
 ## [1.0.1](https://github.com/jimmymcpeter/event-streaming-xml-parser-js/compare/v1.0.0...v1.0.1) (2026-04-17)
 
 
