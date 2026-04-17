@@ -25,13 +25,20 @@ export type ParseXmlFileListeners = {
   end?: EmitterListenerEnd;
 };
 
-export async function parseXml(options: ParseXmlFileOptions) {
-  const eventEmitter = new Emittery();
+type XmlEventData = {
+  opentag: SaxesTagPlain;
+  text: string;
+  closetag: SaxesTagPlain;
+  end: undefined;
+};
 
-  eventEmitter.on('opentag', options.listeners.opentag ?? (() => {}));
-  eventEmitter.on('text', options.listeners.text ?? (() => {}));
-  eventEmitter.on('closetag', options.listeners.closetag ?? (() => {}));
-  eventEmitter.on('end', options.listeners.end ?? (() => {}));
+export async function parseXml(options: ParseXmlFileOptions) {
+  const eventEmitter = new Emittery<XmlEventData>();
+
+  eventEmitter.on('opentag', ({data}) => options.listeners.opentag?.(data));
+  eventEmitter.on('text', ({data}) => options.listeners.text?.(data));
+  eventEmitter.on('closetag', ({data}) => options.listeners.closetag?.(data));
+  eventEmitter.on('end', () => options.listeners.end?.());
 
   const readable = fs.createReadStream(options.filename);
   readable.setEncoding(options.encoding || 'utf8'); // Enable string reading mode
