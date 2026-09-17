@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/jimmymcpeter/event-streaming-xml-parser-js/compare/v2.0.0...v2.0.1) (2026-09-17)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump brace-expansion from 5.0.5 to 5.0.7 ([#34](https://github.com/jimmymcpeter/event-streaming-xml-parser-js/issues/34)) ([59d1493](https://github.com/jimmymcpeter/event-streaming-xml-parser-js/commit/59d1493c614fc039a4ff9df70f6c72c7a3bae213))
+
 ## [2.0.0](https://github.com/jimmymcpeter/event-streaming-xml-parser-js/compare/v1.0.1...v2.0.0) (2026-04-17)
 
 
